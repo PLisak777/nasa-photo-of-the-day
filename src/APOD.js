@@ -7,7 +7,7 @@ export default function WordsnStuff() {
     const [words, setWords] = useState([])
 
     const effectFn = () => {
-        axios.get('https://api.nasa.gov/planetary/apod')
+        axios.get('')
         .then(response => {
             console.log(response)
             // setWords(response.data)
