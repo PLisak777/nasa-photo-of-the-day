@@ -1,17 +1,14 @@
 import React from 'react';
+import axios from 'axios';
+import Body from './Body';
 
-
-const ImgCard = ({ image }) => {
-
-
-
-
-
+const ImgCard = ({ images }) => {
 
     return (
         <div className="img-card">
-            <h2>{image.title}</h2>
-            <p>Description: {image.description}</p>
+            <h2 className="img-title">{images.title}</h2>
+            <div className="apod-img">{images.url}</div>
+            <p>Description: {images.explanation}</p>
         </div>
     )
 }
