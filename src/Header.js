@@ -5,8 +5,6 @@ import axios from 'axios';
 
 export default function Header() {
 
-
-
 return (
     <header className="App-header">
     <img className="App-logo" src='logo192.png'></img>

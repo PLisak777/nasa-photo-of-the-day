@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from './Header'
-import Body from './Body'
+import Body, {  } from './Body'
+import ImgCard from './ImgCard'
 import "./App.css";
 
 function App() {
