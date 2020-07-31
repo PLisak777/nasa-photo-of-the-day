@@ -29,13 +29,13 @@ useEffect(getFn, [])
     return (
         
         <Card className='img-card'>
-          <CardHeader></CardHeader>
-          <CardBody>
+        <CardHeader></CardHeader>
+        <CardBody>
             <CardTitle tag='h2'>{image.title}</CardTitle>
             <CardText tag='p' className='card-text'>{image.explanation}</CardText>
             <img className='asod-img' src={image.url} />
-          </CardBody>
-          <CardFooter></CardFooter>
+        </CardBody>
+        <CardFooter></CardFooter>
         </Card>
     )
 }
