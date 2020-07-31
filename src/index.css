@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.img-card {
+  display: grid;
+  /* grid-template-columns: minmax(150px, 25%) 1fr; */
+  place-items: center;
+  background: lightblue;
+};
