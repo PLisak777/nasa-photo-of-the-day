@@ -1,21 +1,22 @@
-import React, { useState, useEffect } from "react";
-import Header from './Header'
-import Body, {  } from './Body'
-import ImgCard from './ImgCard'
+import React from "react";
+import AppHeader from './Header'
+import Body from './Body'
+import styled from 'styled-components';
 import "./App.css";
+
+const Pancake = styled.div`
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+`
 
 function App() {
 
 
   return (
-    <div className="App">
-      <Header />
-    <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+    <Pancake className="App">
+      <AppHeader />
       <Body />
-    </div>
+    </Pancake>
   )
 }
 
