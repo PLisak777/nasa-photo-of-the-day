@@ -1,15 +1,20 @@
 import React from "react";
+import Body from './Body'
+import styled from 'styled-components';
 import "./App.css";
 
+const Pancake = styled.div`
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+`
+
 function App() {
+
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
-    </div>
-  );
+    <Pancake className="App">
+      <Body />
+    </Pancake>
+  )
 }
 
-export default App;
+export default App
